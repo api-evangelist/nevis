@@ -1,0 +1,28 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.nevis.net/authcloud/getting-started/access-key,
+  https://docs.nevis.net/authcloud/getting-started/rest-api — authentication
+  model for the Nevis Authentication Cloud REST API. Derived from the published
+  documentation rather than an OpenAPI securityScheme (Nevis does not publish a
+  machine-readable OpenAPI for the Authentication Cloud REST API).
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+  - name: AccessKey
+    type: apiKey
+    in: header
+    description: >-
+      REST API calls are authenticated with an "Access Key" created in the
+      Authentication Cloud Management Console and sent on each request. The key
+      scopes access to a single Authentication Cloud instance (tenant). The exact
+      header parameter name is documented in the API endpoint reference.
+    docs: https://docs.nevis.net/authcloud/getting-started/access-key
+    sources: [docs.nevis.net/authcloud/getting-started/rest-api]
+notes: >-
+  End-user authentication is passwordless: FIDO2 / passkeys (Trusted key), the
+  Nevis Access App device authenticator (Trusted device), OATH TOTP, SMS OTP, and
+  recovery codes. The apiKey scheme above governs the server-to-server REST API,
+  not the end-user authentication ceremony.

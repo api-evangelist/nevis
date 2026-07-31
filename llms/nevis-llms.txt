@@ -1,0 +1,42 @@
+# Nevis
+
+> Nevis (Nevis Security AG) is a Swiss customer identity and access management (CIAM) and passwordless authentication provider. The Nevis Authentication Cloud adds passwordless login and transaction signing to applications using FIDO2 passkeys, the Nevis Access App device authenticator, OATH TOTP, SMS OTP and recovery codes, via a versioned REST API and native iOS / Android Mobile Authentication SDKs.
+
+## APIs
+
+- [Nevis Authentication Cloud REST API](https://docs.nevis.net/authcloud/api-doc/api-reference/): Passwordless registration, authentication and transaction signing; served per instance under https://{instance}.mauth.nevis.cloud/api/v1
+
+## Docs
+
+- [Documentation](https://docs.nevis.net/authcloud/): Authentication Cloud documentation
+- [Getting started](https://docs.nevis.net/authcloud/getting-started/): Trial instance, management console, Access Key, and Test & Debug app
+- [Automate with the REST API](https://docs.nevis.net/authcloud/getting-started/rest-api): REST API automation quickstart
+- [API endpoint reference](https://docs.nevis.net/authcloud/api-doc/api-reference/): Registration, Approval, Status, Attestation, Assertion, Verification, Users, Authenticators, Intent, Introspect, Log export, Probe
+- [Mobile Authentication SDK](https://docs.nevis.net/mobilesdk/): iOS and Android SDK documentation
+- [Changelog](https://docs.nevis.net/authcloud/changelog): Dated Authentication Cloud changelog
+- [Status](https://status.nevis.net): Nevis service status
+
+## SDKs
+
+- [iOS Mobile Authentication SDK](https://github.com/nevissecurity/nevis-mobile-authentication-sdk-ios-package): Swift, CocoaPods / Swift Package Manager
+- [Android Mobile Authentication SDK](https://github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package): Kotlin, GitHub Packages Maven (ch.nevis)
+- [GitHub organization](https://github.com/nevissecurity): Nevis Security open-source repositories
+
+## Artifacts (API Evangelist)
+
+- [Packages / SDKs](packages/nevis-packages.yml)
+- [Authentication](authentication/nevis-authentication.yml)
+- [Conventions](conventions/nevis-conventions.yml)
+- [Conformance](conformance/nevis-conformance.yml)
+- [Changelog](changelog/nevis-changelog.yml)
+- [Lifecycle](lifecycle/nevis-lifecycle.yml)
+- [Sandbox](sandbox/nevis-sandbox.yml)
+- [MCP (candidate)](mcp/nevis-mcp.yml)
+
+## Company
+
+- [Website](https://www.nevis.net)
+- [About Nevis](https://www.nevis.net/en/about-us)
+- [Blog](https://www.nevis.net/en/blog)
+- [Privacy policy](https://www.nevis.net/en/privacy-policy)
+- [Legal notice](https://www.nevis.net/en/legal)

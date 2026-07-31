@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.nevis.net/authcloud/changelog
+description: >-
+  Structured capture of the Nevis Authentication Cloud dated changelog. Nevis
+  delivers Authentication Cloud as a continuously updated SaaS and publishes
+  notable changes dated by year / month / ISO week rather than by a semantic
+  version number. This artifact records the recent window of entries; the live
+  changelog is the source of truth.
+docs: https://docs.nevis.net/authcloud/changelog
+versioning:
+  scheme: date-based (year / month / ISO week), rolling SaaS
+  current: '2026 — June (Week 25)'
+  detail: lifecycle/nevis-lifecycle.yml
+entries:
+  - date: '2026-06'
+    week: 'Week 25'
+    highlights:
+      - >-
+        Modernized the FIDO2 Test & Debug page — replaced the deprecated
+        @github/webauthn-json library with the browser's native WebAuthn APIs,
+        removing reliance on an unmaintained third-party dependency.
+  - date: '2026-03'
+    week: 'Week 13'
+    additions:
+      - >-
+        Experimental TOTP (Time-based One-Time Password) authentication option
+        added, based on the OATH standard — users can register and authenticate
+        with a time-based one-time password from an authenticator app.
+    highlights:
+      - >-
+        Log event display names updated to neutral, action-based labels (e.g.
+        "Registration creation" instead of "Registration created").
+  - date: '2026-02'
+    week: 'Week 09'
+    highlights:
+      - Error details for failed push authentication dispatch made more descriptive.
+  - date: '2026-01'
+    week: 'Week 05'
+    additions:
+      - Added event logging for System and Mobile apps settings configuration changes.
+    highlights:
+      - Dark theme added to the Test & Debug page.
+  - date: '2025-12'
+    week: 'Week 49'
+    additions:
+      - Mobile Apps settings screen added to the Management Console under System > Mobile apps.
+    highlights:
+      - Recreated the Registered users report based on the new user-created event.
+      - Added the Abandoned registrations metric to the dashboard's previous-month section.

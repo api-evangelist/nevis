@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.nevis.net/authcloud/changelog, https://status.nevis.net, and the
+  Authentication Cloud documentation. Nevis Authentication Cloud is a
+  continuously-updated SaaS; it does not expose a numbered API version, so
+  lifecycle is expressed through the dated changelog, a public status page, and
+  product-level retirement announcements.
+versioning:
+  scheme: rolling SaaS, dated changelog (no numbered API version)
+  changelog: https://docs.nevis.net/authcloud/changelog
+  detail: changelog/nevis-changelog.yml
+deprecation:
+  policy_url: https://docs.nevis.net/authcloud/changelog
+  sunset_header: false
+  notes: >-
+    Product changes and retirements are announced in the documentation and
+    changelog. A "Classic deployment retirement" announcement is currently
+    surfaced site-wide in the Authentication Cloud documentation, communicating
+    the migration away from the classic deployment model.
+status_page: https://status.nevis.net
+sla:
+  url: null
+  public_uptime_target: null
+  notes: No public numeric uptime SLA was verified in this pass.

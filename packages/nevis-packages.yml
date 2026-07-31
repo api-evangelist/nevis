@@ -1,0 +1,57 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://github.com/nevissecurity — first-party Nevis Mobile Authentication SDK
+  packages, verified against the public GitHub organization repositories and each
+  package's README install instructions. Native mobile SDKs are the primary
+  first-party client libraries; the Flutter and React Native repositories are
+  example/reference applications rather than published plugin packages, and the
+  legacy JavaScript SDK package is archived.
+packages:
+  - language: swift
+    registry: cocoapods
+    name: NevisMobileAuthentication
+    url: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-ios-package
+    source: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-ios-package
+    install: "pod 'NevisMobileAuthentication'"
+    official: true
+    note: >-
+      Nevis Mobile Authentication Client SDK for iOS. Also distributed via Swift
+      Package Manager from the same repository. A -Debug pod variant is provided
+      for Debug configurations. CocoaPods support is being retired end of 2026 in
+      favor of SPM.
+  - language: kotlin
+    registry: github-packages-maven
+    name: ch.nevis:nevis-mobile-authentication-sdk-android
+    url: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package
+    source: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package
+    install: >-
+      implementation "ch.nevis:nevis-mobile-authentication-sdk-android:<version>"
+      (from maven { url "https://maven.pkg.github.com/nevissecurity/nevis-mobile-authentication-sdk-android-package" })
+    official: true
+    note: >-
+      Nevis Mobile Authentication SDK for Android, published as Maven artifacts on
+      GitHub Packages (groupId ch.nevis). A -debug artifact variant is also
+      published (e.g. ch.nevis:nevis-mobile-authentication-sdk-android-debug).
+  - language: go
+    registry: github
+    name: go-pkcs12
+    url: https://github.com/nevissecurity/go-pkcs12
+    source: https://github.com/nevissecurity/go-pkcs12
+    install: go get github.com/nevissecurity/go-pkcs12
+    official: true
+    note: First-party Go library for encoding and decoding PKCS#12 files (utility, not the auth SDK).
+examples:
+  - language: dart
+    name: nevis-mobile-authentication-sdk-example-app-flutter
+    url: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-example-app-flutter
+    note: Flutter example application (reference, not a published plugin package).
+  - language: typescript
+    name: nevis-mobile-authentication-sdk-example-app-react
+    url: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-example-app-react
+    note: React Native example application (reference, not a published npm package).
+archived:
+  - language: javascript
+    name: nevis-mobile-authentication-sdk-js-package
+    url: https://github.com/nevissecurity/nevis-mobile-authentication-sdk-js-package
+    note: Legacy JavaScript SDK package repository, archived.

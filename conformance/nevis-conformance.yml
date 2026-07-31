@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.nevis.net/authcloud — cross-cutting standards the Nevis
+  Authentication Cloud supports, from the published documentation
+  (authentication methods, API endpoint reference, changelog). Standards are
+  asserted only where the documentation provides direct evidence; no compliance
+  certifications (e.g. SOC 2 / ISO 27001) are asserted here because a certified
+  compliance program page was not verified in this pass.
+standards:
+  - id: fido2
+    conforms: true
+    evidence: >-
+      Trusted key (passkey) authentication implemented on FIDO2; dedicated
+      Trusted-key-passkeys documentation and FIDO2 API use cases
+      (docs.nevis.net/authcloud/authentication-methods/Trusted-key-passkeys/,
+      /api-doc/api-use-cases/fido2/).
+  - id: webauthn
+    conforms: true
+    evidence: >-
+      Test & Debug page uses the browser's native WebAuthn APIs (changelog Week
+      25 2026); passkey registration/authentication via WebAuthn.
+  - id: passkeys
+    conforms: true
+    evidence: Trusted key / passkey authentication method with native-app association support.
+  - id: oath-totp
+    conforms: true
+    evidence: >-
+      TOTP authentication option based on the OATH standard (changelog Week 13
+      2026).
+  - id: azure-ad-b2c-interop
+    conforms: true
+    evidence: >-
+      Dedicated "Users - Azure AD B2C" API endpoint and Azure AD B2C
+      authentication concept documentation for identity-provider interoperability.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: No machine-readable OpenAPI captured; problem+json usage not verified.
+  - id: soc2
+    conforms: unverified
+    evidence: Not confirmed in this pass; requires a verified compliance/trust page.
+  - id: iso-27001
+    conforms: unverified
+    evidence: Not confirmed in this pass; requires a verified compliance/trust page.

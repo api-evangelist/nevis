@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the Nevis website
+  and documentation hosts. Status is the HTTP code observed at fetch time. No
+  /.well-known/ discovery documents were published on the probed hosts; this is
+  valid, expected data (the Authentication Cloud REST API is served per-tenant on
+  instance hosts, not from these public hosts). No raw files were saved.
+hosts:
+  - host: https://www.nevis.net
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://docs.nevis.net
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404

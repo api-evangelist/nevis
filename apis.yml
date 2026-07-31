@@ -1,8 +1,28 @@
 aid: nevis
 name: Nevis
-description: Nevis is a company surfaced as a portfolio company of ribbit-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Nevis (Nevis Security AG) is a Swiss customer identity and access management
+  (CIAM) and passwordless authentication provider. Its Authentication Cloud adds
+  passwordless login and transaction signing to applications using FIDO2
+  passkeys, the Nevis Access App device authenticator, OATH TOTP, SMS OTP and
+  recovery codes, exposed through a versioned REST API and native iOS / Android
+  Mobile Authentication SDKs. Nevis also offers the on-premises Identity Suite
+  and Nevis ID, serving banks, insurers and government with secure, standards-based
+  (FIDO2 / WebAuthn) authentication.
 url: https://raw.githubusercontent.com/api-evangelist/nevis/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.nevis.net/hubfs/Nevis/images/logotype.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +31,87 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Authentication
+- Identity
+- Passwordless
+- FIDO2
+- Passkeys
+- CIAM
+- Transaction Signing
+- Security
+apis:
+- name: Nevis Authentication Cloud REST API
+  description: >-
+    REST API to automate the Nevis Authentication Cloud — passwordless
+    registration, authentication and transaction signing (FIDO2 / passkeys,
+    Access App, OATH TOTP, SMS OTP, recovery codes), user and authenticator
+    management, token introspection, and audit log export. Served per instance
+    (tenant) and versioned under /api/v1.
+  humanURL: https://docs.nevis.net/authcloud/api-doc/api-reference/
+  baseURL: https://{instance}.mauth.nevis.cloud/api/v1
+  properties:
+  - type: GettingStarted
+    url: https://docs.nevis.net/authcloud/getting-started/
+  - type: APIReference
+    url: https://docs.nevis.net/authcloud/api-doc/api-reference/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/nevis-domain-security.yml
+- type: Website
+  url: https://www.nevis.net
+- type: DeveloperPortal
+  url: https://docs.nevis.net
+- type: Documentation
+  url: https://docs.nevis.net/authcloud/
+- type: APIReference
+  url: https://docs.nevis.net/authcloud/api-doc/api-reference/
+- type: GettingStarted
+  url: https://docs.nevis.net/authcloud/getting-started/
+- type: Blog
+  url: https://www.nevis.net/en/blog
+- type: GitHubOrganization
+  url: https://github.com/nevissecurity
+- type: PrivacyPolicy
+  url: https://www.nevis.net/en/privacy-policy
+- type: TermsOfService
+  url: https://www.nevis.net/en/legal
+- type: StatusPage
+  url: https://status.nevis.net
+- type: Deprecation
+  url: https://docs.nevis.net/authcloud/changelog
+- type: ChangeLog
+  url: https://docs.nevis.net/authcloud/changelog
+- type: ChangeLog
+  name: Nevis Authentication Cloud changelog (structured)
+  url: changelog/nevis-changelog.yml
+- type: Authentication
+  url: authentication/nevis-authentication.yml
+- type: Packages
+  url: packages/nevis-packages.yml
+- type: SDKs
+  url: packages/nevis-packages.yml
+- type: MCPServer
+  url: mcp/nevis-mcp.yml
+- type: Conventions
+  url: conventions/nevis-conventions.yml
+- type: Conformance
+  url: conformance/nevis-conformance.yml
+- type: Lifecycle
+  url: lifecycle/nevis-lifecycle.yml
+- type: Sandbox
+  url: sandbox/nevis-sandbox.yml
+- type: LLMsTxt
+  url: llms/nevis-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

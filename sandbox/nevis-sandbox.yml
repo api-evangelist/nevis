@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.nevis.net/authcloud/getting-started/ — how to test Nevis
+  Authentication Cloud before going to production. Nevis does not publish static
+  "magic" test values (authentication is based on real FIDO2 / device
+  authenticators and biometrics), so no fabricated test credentials are recorded
+  here; the sandbox surface is a self-service trial instance plus a hosted
+  test/debug console.
+description: >-
+  Nevis Authentication Cloud is tested against a self-service trial instance
+  using the Access App and a hosted single-page Test & Debug application, rather
+  than static test card / token fixtures.
+trial:
+  available: true
+  mechanism: Request a trial instance of Authentication Cloud.
+  docs: https://docs.nevis.net/authcloud/getting-started/
+test_console:
+  name: Test & Debug application (single-page)
+  description: >-
+    A hosted single-page test-and-debug application to exercise registration,
+    authentication and transaction signing (including FIDO2 / passkeys) against
+    your instance. Uses the browser's native WebAuthn APIs.
+  docs: https://docs.nevis.net/authcloud/getting-started/
+credentials:
+  access_key:
+    description: >-
+      REST API automation is authenticated with an Access Key created in the
+      Management Console; a trial instance is used for non-production testing.
+    docs: https://docs.nevis.net/authcloud/getting-started/access-key
+magic_test_values: none-published

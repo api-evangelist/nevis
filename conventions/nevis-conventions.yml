@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://docs.nevis.net/authcloud/api-doc/ — cross-cutting request/response
+  conventions for the Nevis Authentication Cloud REST API, from the published
+  API endpoint reference and use-case documentation. Nevis does not publish a
+  machine-readable OpenAPI, so these are captured from the docs; conventions not
+  documented by Nevis are left as unknown rather than assumed.
+description: >-
+  How the Nevis Authentication Cloud REST API behaves across operations:
+  per-instance base URL, versioning, authentication, and the operation model.
+base_url: https://{instance}.mauth.nevis.cloud/api/v1
+base_url_note: >-
+  The API is served per Authentication Cloud instance (tenant); {instance} is
+  your instance identifier. Operations live under the /api/v1 path
+  (e.g. /api/v1/introspect, /api/v1/status, /api/v1/users/enroll).
+api_style: REST over HTTPS, JSON request/response
+versioning:
+  scheme: uri-path
+  current: v1
+  detail: lifecycle/nevis-lifecycle.yml
+authentication:
+  scheme: Access Key (apiKey) sent in a request header
+  detail: authentication/nevis-authentication.yml
+  docs: https://docs.nevis.net/authcloud/getting-started/access-key
+operation_model:
+  description: >-
+    Ceremonies are modeled as registration, approval, status, attestation,
+    assertion, verification, intent and introspect operations, with user and
+    authenticator management and audit log export.
+  endpoints_reference: https://docs.nevis.net/authcloud/api-doc/api-reference/
+idempotency:
+  supported: not-documented
+  note: No idempotency-key mechanism is documented for the Authentication Cloud REST API.
+pagination:
+  style: not-documented
+error_handling:
+  note: >-
+    Failed events (e.g. push authentication dispatch) are surfaced with
+    descriptive error details and captured in the event log; see "Logging failed
+    events with integration errors" in the documentation.
+health_check:
+  probe_endpoint: /api/v1 probe (see api-reference/probe-ref)
+  status_page: https://status.nevis.net
