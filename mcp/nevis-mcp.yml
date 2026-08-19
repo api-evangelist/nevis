@@ -1,50 +1,54 @@
 generated: '2026-07-20'
 method: derived
 status: candidate
-source: >-
-  https://docs.nevis.net/authcloud/api-doc/api-reference/ — no official hosted or
-  local Nevis MCP server was found in this pass. This is a CANDIDATE tool list
-  derived from the documented Authentication Cloud REST API endpoint reference
-  (one tool per documented endpoint). It is a starting point for an MCP server,
-  not a published Nevis product.
+source: https://docs.nevis.net/authcloud/api-doc/api-reference/ — no official hosted or local Nevis MCP
+  server was found in this pass. This is a CANDIDATE tool list derived from the documented Authentication
+  Cloud REST API endpoint reference (one tool per documented endpoint). It is a starting point for an
+  MCP server, not a published Nevis product.
 server:
   name: nevis-authentication-cloud
   transport: http
   url: null
 tools:
-  - name: register_authenticator
-    description: Initiate registration of a new authenticator / FIDO2 credential for a user.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/registration-ref
-  - name: create_approval
-    description: Create an approval (authentication / transaction-signing) request.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/approval-ref
-  - name: get_status
-    description: Retrieve the status of a registration or authentication operation.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/status-ref
-  - name: get_attestation
-    description: Retrieve attestation data for an authenticator.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/attestation-ref
-  - name: get_assertion
-    description: Retrieve assertion data for an authentication ceremony.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/assertion-ref
-  - name: verify
-    description: Verify an authentication or transaction-signing assertion.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/verification-ref
-  - name: manage_users
-    description: Retrieve, delete, or manage users.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/users-endpoint-ref
-  - name: manage_authenticators
-    description: List, rename, or delete a user's authenticators.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/authenticator-endpoint-ref
-  - name: create_intent
-    description: Create an intent that ties an operation to a user action.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/intent-ref
-  - name: introspect
-    description: Introspect a token / operation to check validity and status.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/introspect-ref
-  - name: export_logs
-    description: Export the event / audit log.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/log-export-ref
-  - name: probe
-    description: Service health-check probe.
-    source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/probe-ref
+- name: register_authenticator
+  description: Initiate registration of a new authenticator / FIDO2 credential for a user.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/registration-ref
+- name: create_approval
+  description: Create an approval (authentication / transaction-signing) request.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/approval-ref
+- name: get_status
+  description: Retrieve the status of a registration or authentication operation.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/status-ref
+- name: get_attestation
+  description: Retrieve attestation data for an authenticator.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/attestation-ref
+- name: get_assertion
+  description: Retrieve assertion data for an authentication ceremony.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/assertion-ref
+- name: verify
+  description: Verify an authentication or transaction-signing assertion.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/verification-ref
+- name: manage_users
+  description: Retrieve, delete, or manage users.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/users-endpoint-ref
+- name: manage_authenticators
+  description: List, rename, or delete a user's authenticators.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/authenticator-endpoint-ref
+- name: create_intent
+  description: Create an intent that ties an operation to a user action.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/intent-ref
+- name: introspect
+  description: Introspect a token / operation to check validity and status.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/introspect-ref
+- name: export_logs
+  description: Export the event / audit log.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/log-export-ref
+- name: probe
+  description: Service health-check probe.
+  source_endpoint: docs.nevis.net/authcloud/api-doc/api-reference/probe-ref
+deployment:
+  mode: none
+  verified: derived
+  tools: 12
+  checked: '2026-08-12'
+  source: catalog MCP census
