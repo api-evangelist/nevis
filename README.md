@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Nevis is a company surfaced as a portfolio company of ribbit-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Nevis (Nevis Security AG) is a Swiss customer identity and access management (CIAM) and passwordless authentication provider. Its Authentication Cloud adds passwordless login and transaction signing to applications using FIDO2 passkeys, the Nevis Access App device authenticator, OATH TOTP, SMS OTP and recovery codes, exposed through a versioned REST API and native iOS / Android Mobile Authentication SDKs. Nevis also offers the on-premises Identity Suite and Nevis ID, serving banks, insurers and government with secure, standards-based (FIDO2 / WebAuthn) authentication.
 
-Backed by: ribbit-capital
+**Areas:** Company · Authentication · Identity · Passwordless · FIDO2 · Passkeys · CIAM · Transaction Signing · Security
+
+## Nevis on APIs.io
+
+Everything profiled for Nevis is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/nevis/](https://apis.io/providers/nevis/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Nevis Authentication Cloud REST API](https://apis.io/apis/nevis/nevis-authentication-cloud-rest-api/) — REST API to automate the Nevis Authentication Cloud — passwordless registration, authentication and transaction signing (FIDO2 / passkeys, Access App, OATH…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [nevis-authentication-cloud](https://apis.io/servers/nevis/nevis-authentication-cloud/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Nevis Authentication](https://apis.io/security/nevis/nevis-authentication/)
+- [Nevis Domain Security](https://apis.io/security/nevis/nevis-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.nevis.net)
+- [Documentation](https://docs.nevis.net/authcloud/)
+- [Getting started](https://docs.nevis.net/authcloud/getting-started/)
+- [API reference](https://docs.nevis.net/authcloud/api-doc/api-reference/)
+- [Changelog](https://docs.nevis.net/authcloud/changelog)
+- [Blog](https://www.nevis.net/en/blog)
+- [Terms of service](https://www.nevis.net/en/legal)
+- [Privacy policy](https://www.nevis.net/en/privacy-policy)
+- [GitHub](https://github.com/nevissecurity)
+- [Status](https://status.nevis.net)
+
+## API Evangelist rating
+
+**Kin Score 33.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 66.7 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/nevis/](https://apis.io/providers/nevis/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Nevis: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/nevis/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
